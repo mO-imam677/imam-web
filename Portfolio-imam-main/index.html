@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Imam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color:#ABBA7C;">
+        <div class="container">
+            <a class="navbar-brand" href="#">IMAM</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="jumbotron text-center" style="background-color: #F6EFBD;">
+        <img src="images/fotoku.jpg" class="rounded-circle" style="width: 300px; height: 300px;" alt="Foto Imam">
+        <h1 class="display-4">Hello Guys</h1>
+        <p class="lead">Perkenalkan Nama Saya Muhammad Imam Bulgini mahasiswa stikom muhammadiyah batam <br>
+            nim : 24010022 <br>
+            inilah web saya dengan aplikasinya selamat mencoba
+        </p>
+    </section>
+
+    <!-- Program Section -->
+    <div class="container">
+        <h1 class="text-center">PROGRAM</h1>
+        <div class="row">
+            <!-- Hello World Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Hello World</h5>
+                        <p>INI ADALAH TUGAS PROGRAM HELLO WORLD</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#helloWorldModal">
+                            Tampilkan Hello World
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Segitiga Bintang</h5>
+                        <div class="form-group">
+                            <label for="rowInput">Masukkan jumlah baris:</label>
+                            <input type="number" class="form-control" id="rowInput" min="1">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="generateBtn" data-toggle="modal" data-target="#resultModal">Tampilkan Segitiga</button>
+                    </div>
+                </div>
+            </div>
+
+              <!-- Modal untuk Hasil Segitiga Bintang -->
+    <div class="modal fade" id="resultModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hasil Segitiga Bintang</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="resultContent">
+                    <!-- Hasil segitiga akan ditampilkan di sini -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+
+            <!-- Luas Persegi Panjang Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Luas Persegi Panjang</h5>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#luasPersegiModal">
+                            Hitung Luas
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kipas Angin Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img id="fanImage" src="images/mati.png" class="card-img-top img-fluid" alt="Kipas Angin Mati">
+                    <div class="card-body">
+                        <h5 class="card-title">Kipas Angin</h5>
+                        <p class="card-text">Jika Anda ingin menghidupkan silahkan klik tombol di bawah.</p>
+                        <a href="#" id="startButton" class="btn btn-primary">Aktifkan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk Hello World -->
+    <div class="modal fade" id="helloWorldModal" tabindex="-1" role="dialog" aria-labelledby="helloWorldLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="helloWorldLabel">Hello World</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Hello World!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk Luas Persegi -->
+    <div class="modal fade" id="luasPersegiModal" tabindex="-1" role="dialog" aria-labelledby="luasPersegiLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="luasPersegiLabel">Luas Persegi Panjang</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Masukkan panjang dan lebar:</p>
+                    <input type="number" id="panjang" placeholder="Panjang" class="form-control mb-2">
+                    <input type="number" id="lebar" placeholder="Lebar" class="form-control mb-2">
+                    <button type="button" class="btn btn-success" onclick="hitungLuas()">Hitung</button>
+                    <div id="luasResult" class="mt-2"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+
+document.getElementById('generateBtn').addEventListener('click', function() {
+            const rows = document.getElementById('rowInput').value;
+            let result = '';
+
+            for (let i = 1; i <= rows; i++) {
+                result += ' '.repeat(rows - i) + '* '.repeat(i) + '<br>';
+            }
+
+            document.getElementById('resultContent').innerHTML = result;
+        });
+
+     function hitungLuas() {
+    const panjang = document.getElementById('panjang').value;
+    const lebar = document.getElementById('lebar').value;
+    const luas = panjang * lebar;
+    document.getElementById('luasResult').innerText = `Luas: ${luas}`; // Menggunakan backticks untuk string template
+}
+
+        // Tombol Kipas
+        const fanImage = document.getElementById("fanImage");
+        const startButton = document.getElementById("startButton");
+
+        startButton.addEventListener("click", function(event) {
+            event.preventDefault();
+            if (fanImage.src.includes("mati.png")) {
+                fanImage.src = "images/hidup.gif"; // Ganti ke kipas hidup
+                startButton.textContent = "Matikan Kipas";
+                startButton.classList.remove("btn-primary");
+                startButton.classList.add("btn-danger");
+            } else {
+                fanImage.src = "images/mati.png"; // Ganti ke kipas mati
+                startButton.textContent = "Aktifkan";
+                startButton.classList.remove("btn-danger");
+                startButton.classList.add("btn-primary");
+            }
+        });
+    </script>
+</body>
+</html>
